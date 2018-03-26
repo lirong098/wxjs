@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "请假",
+  "usingComponents": {
+    "cell": "../../../common/components/cell/cell",
+    "uploader-img": "../../../common/components/uploader_img/uploader_img"
+  }
+}

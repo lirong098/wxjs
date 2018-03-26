@@ -1,0 +1,21 @@
+/* page/work/pages/leasing_cloud.wxss */
+@import "../../../common/lib/weui.wxss";
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}
+.dw-textarea {
+  /* border: 1px solid red; */
+  width: 100%;
+  min-height: 300rpx;
+  padding-left:20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.dw-fixed-button {
+  position: fixed;
+  bottom: 0rpx;
+  background-color: white;
+  width: 100%;
+}

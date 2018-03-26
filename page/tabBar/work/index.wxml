@@ -1,0 +1,25 @@
+<view class="index">
+  <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+        <view class="kind-list-item">
+          <navigator url="../../work/pages/{{item.url}}/{{item.url}}" class="kind-list-item-hd">
+            <view class="kind-list-text">{{item.name}}</view>
+            <image class="kind-list-img" src="../../common/resources/work/{{item.id}}.png"></image>
+          </navigator>
+          <!-- <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+            <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+              <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                <navigator url="../../API/pages/{{page.url}}" class="navigator">
+                  <view class="navigator-text">{{page.zh}}</view>
+                  <view class="navigator-arrow"></view>
+                </navigator>
+              </block>
+            </view>
+          </view> -->
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+

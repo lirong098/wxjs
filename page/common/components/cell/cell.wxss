@@ -1,0 +1,2 @@
+/* page/common/components/cell/cell.wxss */
+@import "../../lib/weui.wxss";

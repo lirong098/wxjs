@@ -1,0 +1,2 @@
+/* page/common/components/uploader_img/uploader_img.wxss */
+@import "../../lib/weui.wxss";

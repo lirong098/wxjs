@@ -1,0 +1,36 @@
+<!--page/work/pages/leasing_cloud.wxml-->
+<view class="container dw-container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="weui-cells__title">这是本月第{{qty}}次提交请假</view>
+    <cell cell-name="请假类型">
+      <picker range="{{leasingType}}" value="{{formData.leasingTypeIndex}}" name="leasingTypeIndex" bindchange="typeChange">
+        <view class="weui-input">{{leasingType[formData.leasingTypeIndex]}}</view>
+      </picker>
+    </cell>
+
+    <view class="weui-cells__title">我的假期</view>
+    <cell cell-name="开始时间">
+      <picker mode="date" value="{{formData.start_date}}" start="2018-01-01" end="2050-12-30" name="start_date" bindchange="bindStartDateChange">
+        <view class="weui-input">{{formData.start_date}}</view>
+      </picker>
+    </cell>
+    <cell cell-name="结束时间">
+      <picker mode="date" value="{{formData.end_date}}" start="2018-01-01" end="2050-12-30" name="end_date" bindchange="bindEndDateChange">
+        <view class="weui-input">{{formData.end_date}}</view>
+      </picker>
+    </cell>
+    <cell cell-name="时长(天)">
+      <input class="weui-input" placeholder="请输入时长" name="dates" value="{{formData.dates}}"/>
+    </cell>
+    <view class="weui-cells__title">请假事由</view>
+    <view class="weui-cells weui-cells_after-title">
+      <textarea class="dw-textarea" name="reason" value="{{formData.reason}}" auto-height placeholder="请输入请假事由" />
+    </view>
+
+    <view class="weui-cells__title"></view>
+     <uploader-img image-list="{{imgList}}" count="{{count}}" bindgetImgData="imgData"></uploader-img> 
+    <view class="dw-fixed-button">
+      <button type="primary" loading="{{loading}}" formType="submit">提交</button>
+    </view>
+  </form>
+</view>

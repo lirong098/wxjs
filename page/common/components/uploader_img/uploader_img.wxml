@@ -1,0 +1,24 @@
+<view class="weui-cells">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view class="weui-uploader">
+        <view class="weui-uploader__hd">
+          <view class="weui-uploader__title">点击可预览选好的图片</view>
+          <view class="weui-uploader__info">{{imageList.length}}/{{count}}</view>
+        </view>
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files">
+            <block wx:for="{{imageList}}" wx:for-item="image" wx:key="index">
+              <view class="weui-uploader__file">
+                <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+              </view>
+            </block>
+          </view>
+          <view class="weui-uploader__input-box">
+            <view class="weui-uploader__input" bindtap="chooseImage"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
