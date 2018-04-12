@@ -1,4 +1,5 @@
 <view class="weui-cells">
+    <view wx:for="{{arr}}" wx:key="index">{{item}}</view>
   <view class="weui-cell">
     <view class="weui-cell__bd">
       <view class="weui-uploader">

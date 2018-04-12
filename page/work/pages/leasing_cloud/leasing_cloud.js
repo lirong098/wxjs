@@ -83,6 +83,7 @@ Page({
   },
   imgData: function (e) {
     let self = this
+    console.log('vhgvhvh', e)
     self.setData({
       imgList: e.detail
     })
