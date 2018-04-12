@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "test",
+    "usingComponents": {
+        "testa": "../../../common/components/test_a/test_a",
+        "testb": "../../../common/components/test_b/test_b",
+        "testc": "../../../common/components/test_c/test_c"
+    }
+}

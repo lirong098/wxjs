@@ -1,0 +1,7 @@
+<!--page/work/pages/test.wxml-->
+<view>
+    <testa>
+        <testb></testb>
+        <testc></testc>
+    </testa>
+</view>

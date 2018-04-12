@@ -1,0 +1,5 @@
+<!--page/common/components/test_a/test_a.wxml-->
+<view>
+    {{str}}
+    <slot></slot>
+</view>

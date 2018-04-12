@@ -10,6 +10,12 @@ Page({
         name: '请假单',
         url: 'leasing_cloud',
         test: ''
+      },
+      {
+          id: 'test',
+          name: '测试组件传值',
+          url: 'test',
+          test: ''
       }
     ]
   },
@@ -20,11 +26,11 @@ Page({
     // console.log(app.globalData.openid)
     // if (!app.globalData.openid || app.globalData.openid === null) app.getUserInfo()
     let self = this
-    app.index().then(res => {
-      self.setData({
-        test: res.open_id
-      })
-    })
+    // app.index().then(res => {
+    //   self.setData({
+    //     test: res.open_id
+    //   })
+    // })
   },
   kindToggle: function (e) {
     console.log(e)

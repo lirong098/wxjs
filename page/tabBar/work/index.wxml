@@ -5,7 +5,7 @@
         <view class="kind-list-item">
           <navigator url="../../work/pages/{{item.url}}/{{item.url}}" class="kind-list-item-hd">
             <view class="kind-list-text">{{item.name}}</view>
-            <image class="kind-list-img" src="../../common/resources/work/{{item.id}}.png"></image>
+            <!-- <image class="kind-list-img" src="../../common/resources/work/{{item.id}}.png"></image> -->
           </navigator>
           <!-- <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
             <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">

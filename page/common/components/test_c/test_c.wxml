@@ -1,0 +1,5 @@
+<!--page/common/components/test_c/test_c.wxml-->
+<view bindtap="onTap">
+page/common/components/test_c/test_c.wxml
+{{str}}
+</view>
